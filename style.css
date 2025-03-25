@@ -138,7 +138,8 @@ ul li input{
     top: 100px;
     left: 50%;
     background-color: yellow;
-    /* display: none; */
+    
+    display: none; 
 }
 @media (max-width : 900px) {
         .list{
