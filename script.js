@@ -15,6 +15,9 @@ function add(ev){
     }
 }
 
+
+
+
 function appendli(){
     let val= inp.value
     let li=document.createElement("li");
@@ -22,11 +25,13 @@ function appendli(){
     <p>${val}</p>
     <div>
     <button class="btn btn-success delete"> Delete </button>
+    <button class="btn btn-success update">Update</button>
     <input type="checkbox" class="check">
     </div>
     `
     ul.appendChild(li)
     del()
+    update()
     inp.value=''
 }
 
@@ -56,6 +61,27 @@ function del(){
     })
 }
 
+// Updating the Task
+
+
+
+
+
+
+function update(){
+    let hi=true
+    let btns=document.querySelectorAll(".update")
+    let arr=Array.from(btns)
+    arr.forEach((val)=>{
+        val.removeEventListener("click",updateval)
+        val.addEventListener("click",updateval)
+    })
+
+}
+function updateval(val){
+    let prom =prompt('Enter the value')
+    val.currentTarget.parentElement.parentElement.children[0].innerHTML=prom
+}
 
 
 

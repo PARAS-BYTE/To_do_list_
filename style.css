@@ -121,11 +121,29 @@ ul li input{
 .progress{
     height: 5px;
 }
+.update{
+    margin-left :10px;
 
+}
+.upd{
+    
+    height: 200px;
+    width: 500px;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 1px solid black;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    background-color: yellow;
+    /* display: none; */
+}
 @media (max-width : 900px) {
         .list{
             width: 400px;
-
+/*  */
         }
         ul li p{
             max-width: 200px;
